@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600;800&display=swap');
+
+:root {
+    --brown1: #453528;
+    --brown2: #372A21;
+    --green: #898B06;
+    --red: #D63A25;
+    --yellow: #DC8409;
+    --white: #fff;
+    --fonte1: font-family: 'Roboto Slab', serif;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--brown1);
+}
+
+body{
+    background-color: var(--brown1);
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end ;
+    margin-left: -60px;
+}
+
+li{
+    padding: 25px 10px 25px 10px;
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 19px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 520;
+    transition: 0.4s;
+    margin: 0px 20px 0px 20px;
+}
+
+li:hover{
+    background-image: linear-gradient(0deg, var(--green), var(--brown1));
+    color: var(--brown2);
+    transition: 0.4s;
+}
+
+#logo{
+    width: 150px;
+    height: auto;
+    margin: 0px 0px 10px 90px;
+}
+
+#banner{
+    background-image: url('./Imagens/Banner.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+
+.actor-cards-container{
+    
+    align-items: center;
+    margin-top: -100px;
+    
+    
+}
+
+.cards-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    height: 200px;
+}
+
+.card{
+    width: 215px;
+    height: 189px;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 0px 0px 10px 0px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+    
+}
+
+.card:hover{
+    width: 280px;
+    height: 240px;
+    transition: all 0.2s;
+}
+
+.banner-1 {
+    background-image: url('./Imagens/card1.png');
+}
+
+.banner-1:hover{
+    background-image: url('./Imagens/card11.png');
+}
+.banner-2{
+    background-image: url('./Imagens/card2.png');
+}
+.banner-2:hover{
+    background-image: url('./Imagens/card22.png');
+}
+.banner-3{
+    background-image: url('./Imagens/card3.png');
+}
+.banner-3:hover{
+    background-image: url('./Imagens/card33.png');
+}
+
+footer{
+    background-color: var(--brown2);
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#logo-footer{
+   
+    width: 15%;
+    
+}
+
+span{
+    color: #fff;
+    font-family: var(--fonte);
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #banner{
+        background-position: 40%;
+    }
+
+    #trailer-container{
+        width: 100%;
+        height: 400%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .treiler{
+        width: 100%;
+    }
+
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .button{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
