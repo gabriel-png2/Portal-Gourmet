@@ -160,3 +160,61 @@ body{
     color: #fff;
     
 }
+
+/* Pagina cardapio */
+.card-cardapio {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  
+  /* Estilos da imagem */
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Estilos do nome */
+  .card h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* Estilos para tela menor que 500px */
+  @media screen and (max-width: 500px) {
+    .card {
+      max-width: 100%;
+    }
+  }
+
+  hr {
+    border: 1px solid ;
+    border-color: #DC8409;
+    border-width: 2px;
+  }
+
+  .cardapio-main {
+    display: flex;
+    margin: auto;
+    padding: 30px;
+    max-width: 1500px;
+    margin: auto;
+    
+   
+    
+    flex-wrap: wrap;
+    
+  }
+
+  .h1-cardapio {
+    color: #fff;
+  }
+
+  
