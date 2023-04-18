@@ -48,7 +48,8 @@ body{
     transition: .5s;
     font-size: 19px;
     font-family: var(--fonte1);
-    font-weight: 520;
+    font-weight: bold;
+    font-weight: 520px;
     transition: 0.4s;
     margin: 0px 20px 0px 20px;
 }
@@ -161,31 +162,73 @@ body{
     
 }
 
+
+.h1-cardapio {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.h1-cardapio h1 {
+    color: #e8e7e6;
+    font-weight: bold;
+    font-family: var(--fonte1);
+
+}
+
+
 /* Pagina cardapio */
 .card-cardapio {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 100%;
-    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.645);
+    border: 5px solid #DC8409;
+    border-radius: 10px;
+    width: auto;
+    max-width: 350px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 20px;
+    text-align: center;
   }
+
+  
   
   /* Estilos da imagem */
-  .card img {
-    width: 100%;
-    height: auto;
+  .card-cardapio img {
+    width: 350px;
+    height: 300px;
     border-radius: 5px;
+    
   }
   
   /* Estilos do nome */
-  .card h2 {
+  .card-cardapio h2 {
     margin-top: 10px;
     font-size: 24px;
     text-align: center;
+    color: gold;
   }
+
+  .descricao-prato {
+    color: #DC8409;
+    padding: 5px;
+  }
+
+  
+.button-carrinho {
+    padding: 10px 20px;
+    border: none;
+    background-color: #b6b923;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .button-carrinho:hover {
+    background-color: #d0d60f;
+  }
+  
+    
   
   /* Estilos para tela menor que 500px */
   @media screen and (max-width: 500px) {
@@ -205,16 +248,12 @@ body{
     margin: auto;
     padding: 30px;
     max-width: 1500px;
-    margin: auto;
-    
-   
-    
     flex-wrap: wrap;
-    
   }
 
   .h1-cardapio {
     color: #fff;
   }
 
+ 
   
