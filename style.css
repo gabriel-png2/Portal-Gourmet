@@ -18,18 +18,19 @@
     text-decoration: none;
     
 }
-a {
+.my-a {
     color: #fff;
 }
 
-body{
+.my-body{
     background-color: var(--brown1);
+    
 }
 /* MENU */
 
 
 
-.content {
+.custom-content {
     height: 88px;
     display: flex;
     justify-content: space-around;
@@ -50,13 +51,15 @@ body{
     height: 100%;
 }
 
-.content .list-menu {
+.custom-content .custom-list-menu {
     display: flex;
-    font-family: var(--fonte1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 auto;
+    
     
 }
 
-.content .list-menu li a{
+.custom-content .custom-list-menu .my-li .my-a{
     padding-top: 3rem;
     padding-bottom: 2rem;
     padding-left: 1rem;
@@ -64,27 +67,32 @@ body{
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     transition: all 200ms ease-in;
+    list-style: none;
+    text-decoration: none;
+    
 }
 
-.content .list-menu li a:hover{
+.custom-content .custom-list-menu .my-li .my-a:hover{
     background-image: linear-gradient(0deg, var(--green), var(--brown1));
     color: var(--brown2);
-    transition: 0.4s;
+    transition: 0.1s;
+    border-bottom: 4px solid #ffc506;  
+    color: #ffc506;
 }
 
-hr {
+.my-hr {
     border: 1px solid #DC8409;
     border-width: 2px;
   }
 
 
 @media (max-width: 870px) {
-    .content {
+    .custom-content {
         justify-content: space-between;
         padding: 0px 5px;
     }
 
-    .content .list-menu{
+    .custom-content .custom-list-menu{
         display: none;
     }
 
@@ -106,7 +114,7 @@ hr {
 
     }
 
-    .content.on {
+    .custom-content.on {
         top: 0;
         left: 0;
         height: 100vh;
@@ -117,42 +125,42 @@ hr {
         align-items: center;
     }
 
-    .content.on .logo {
+    .custom-content.on .logo {
         display: none;
     }
 
-    .content.on .menu-toggle {
+    .custom-content.on .menu-toggle {
         position: absolute;
         right: 40px;
         top: 20px;
     }
 
-    .content.on .list-menu {
+    .custom-content.on .custom-list-menu {
         display: block;
         
     }
 
-    .content.on .list-menu li {
+    .custom-content.on .custom-list-menu .my-li {
         text-align: center;
         display: flex;
         justify-content: center;
         
     }
 
-    .content.on .list-menu li a {
+    .custom-content.on .custom-list-menu .my-li .my-a {
         font-size: 1rem;
         display: block;
     }
 
 
-    .content.on .menu-toggle .one {
+    .custom-content.on .menu-toggle .one {
         transform: rotate(45deg) translate(8px, -7px);
     }
-    .content.on .menu-toggle .two {
+    .custom-content.on .menu-toggle .two {
         opacity: 0;
     }
 
-    .content.on .menu-toggle .three {
+    .custom-content.on .menu-toggle .three {
         transform: rotate(-45deg) translate(20px, -6px);
     }
 
@@ -182,12 +190,14 @@ hr {
 }
 
 
-.actor-cards-container{
+
+
+.my-actor-cards-container{
     align-items: center;
     margin-top: -100px;    
 }
 
-.cards-content{
+.my-cards-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 0px;
@@ -200,8 +210,9 @@ hr {
 
 .card{
     width: 215px;
-    height: 189px;
-    background-size: cover;
+    height: 289px;
+    background-size: 111%;
+    background-repeat: no-repeat;
     background-position: 50% 50%;
     padding: 0px 0px 10px 0px;
     cursor: pointer;
@@ -210,34 +221,34 @@ hr {
     transition: all 0.2s;
 }
 
-.banner-1 {
+.my-banner-1 {
     background-image: url('./Imagens/card1.png');
 }
 
-.banner-1:hover{
+.my-banner-1:hover{
     background-image: url('./Imagens/card11.png');
 }
-.banner-2{
+.my-banner-2{
     background-image: url('./Imagens/card2.png');
 }
-.banner-2:hover{
+.my-banner-2:hover{
     background-image: url('./Imagens/card22.png');
 }
-.banner-3{
+.my-banner-3{
     background-image: url('./Imagens/card3.png');
 }
-.banner-3:hover{
+.my-banner-3:hover{
     background-image: url('./Imagens/card33.png');
 }
 
 .card:hover{
-    width: 280px;
-    height: 240px;
-    transition: all 0.2s;
+    width: 320px;
+    height: 300px;
+    transition: all 0.1s;
 }
 
 
-.rodape-container{
+.my-rodape-container{
     display: flex;
     bottom: 0;
     align-items: center;
@@ -252,7 +263,7 @@ hr {
     margin-top: 15px;
 }
 
-.footer-descricao {
+.my-footer-descricao {
     height: 50px;
 }
 
@@ -260,7 +271,7 @@ hr {
     color: black;
 }
 
-.footer-list-container {
+.my-footer-list-container {
     display: flex;
     margin-top: 20px;
     gap: 2rem;
@@ -284,8 +295,9 @@ hr {
 
 /* Pagina cardapio */
 .card-cardapio {
-    background-color: rgba(0, 0, 0, 0.645);
+    background-color: rgba(34, 33, 33, 0.645);
     border: 5px solid #DC8409;
+    box-shadow: #775136;
     border-radius: 10px;
     width: auto;
     max-width: 350px;
@@ -298,6 +310,7 @@ hr {
   
   /* Estilos da imagem */
   .card-cardapio img {
+    
     width: 350px;
     height: 300px;
     border-radius: 5px;
@@ -309,11 +322,11 @@ hr {
     margin-top: 10px;
     font-size: 24px;
     text-align: center;
-    color: gold;
+    color: rgb(255, 255, 255);
   }
 
   .descricao-prato {
-    color: #DC8409;
+    color: #c5c5c5;
     padding: 5px;
   }
 
@@ -321,17 +334,18 @@ hr {
 .button-carrinho {
     padding: 10px 20px;
     border: none;
-    background-color: #b6b923;
+    background-color: #DC8409;
     color: white;
     font-size: 16px;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
     margin-top: 10px;
     margin-bottom: 5px;
+    font-weight: bold;
   }
   
   .button-carrinho:hover {
-    background-color: #d0d60f;
+    background-color: #2da605;
   }
   
     
@@ -345,7 +359,7 @@ hr {
 
  
 
-  .cardapio-main {
+  .my-cardapio-main {
     display: flex;
     margin: auto;
     padding: 30px;
@@ -357,5 +371,9 @@ hr {
     color: #fff;
   }
 
- 
+ .my-container-cardapio-home {
+    
+    max-width: 350px;
+
+ }
   
